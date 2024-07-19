@@ -1,0 +1,105 @@
+ <!-- navbar -->
+ 
+ <div class="navbar mb-2 fixed w-full z-10 top-0 border-b bg-base-100 text-base-content ">  
+    <div class="px-2 mx-2 navbar-start">
+     <div class="text-lg font-bold w-7">
+       <img src="../Assets/Nyasa_logo.png" loading="lazy" style="width: 80px;">
+     </div>
+   </div>
+   <div class="hidden px-2 mx-2 navbar-center lg:flex">
+     <div class="flex items-stretch">
+       <nav class="menu menu-horizontal space-x-4">
+         <li>
+           <a href="../index.html" class="ghost-btn rounded-lg" onclick="highlightButton(this)">Home</a>
+         </li>
+         <li>
+           <a href="activities.html" class="ghost-btn rounded-lg" onclick="highlightButton(this)">Activities</a>
+         </li>
+         <li>
+           <a href="news.html" class="ghost-btn rounded-lg" onclick="highlightButton(this)">News</a>
+         </li>
+         <!-- <li>
+           <a href="/education.html" class="ghost-btn rounded-lg" onclick="highlightButton(this)>Education</a>
+         </li> -->
+         <li>
+           <a href="contribute.html" class="ghost-btn rounded-lg" onclick="highlightButton(this)">Contribute</a>
+         </li>
+         <!-- <li>
+           <a href="/blog.html" class="ghost-btn rounded-lg">Blog</a>
+         </li> -->
+         <li>
+           <a href="team.html" class="ghost-btn rounded-lg" onclick="highlightButton(this)">Team</a>
+         </li>
+       </nav>
+     </div>
+   </div>
+   <div class="navbar-end">
+     <!-- Navbar End -->
+     <!-- Dropdown navbar for samll devices -->
+     <div class="dropdown dropdown-end">
+       <div tabindex="0" class="m-1 btn btn-square btn-ghost lg:hidden">
+         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+           class="inline-block w-6 h-6 stroke-current">
+           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+         </svg>
+       </div>
+       <nav>
+         <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
+           <li class="active">
+             <a href="../index.html">Home</a>
+           </li>
+           <li class="nav">
+             <a href="activities.html">Activities</a>
+           </li>
+           <li class="nav">
+             <a href="news.html">News</a>
+           </li>
+           <li class="nav">
+             <a href="contribute.html">Contribute</a>
+           </li>
+           <!-- <li class="nav">
+             <a href="blog.html">Blog</a>
+           </li> -->
+           <li class="nav">
+             <a href="team.html">Team</a>
+           </li>
+         </ul>
+       </nav>
+     </div>
+     <!-- <button class="btn btn-square btn-ghost">
+               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">             
+                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>             
+               </svg>
+             </button> -->
+   </div>
+   <!-- End of Dropdown Navbar -->
+ </div>
+
+ <script>
+  function highlightButton(button) {
+    console.log("Button clicked:", button);
+    // Remove 'active' class from all buttons
+    var buttons = document.querySelectorAll('.ghost-btn');
+    buttons.forEach(function(btn) {
+        btn.classList.remove('active');
+    });
+
+    // Add 'active' class to the clicked button
+    button.classList.add('active');
+}
+
+</script>
+
+<style>
+
+  /* CSS to style the active button */
+  .ghost-btn rounded-lg.active {
+      background-color: yellow;
+      /* Adjust styles as needed */
+  }
+
+</style>
+
+
+ 
+

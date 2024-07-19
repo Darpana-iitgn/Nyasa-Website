@@ -45,6 +45,8 @@
     }
     
   }
+
+
   </style>
 
   <title>Nyasa | Team</title> 
@@ -52,80 +54,7 @@
 
 <body>
   <!-- navbar -->
-  <div class="navbar mb-2 fixed w-full z-10 top-0 border-b bg-base-100 text-base-content ">
-    <div class="px-2 mx-2 navbar-start">
-      <div class="text-lg font-bold w-7">
-        <img src="../Assets/Nyasa_logo.png" loading="lazy" style="width: 80px;">
-      </div>
-    </div>
-    <div class="hidden px-2 mx-2 navbar-center lg:flex">
-      <div class="flex items-stretch">
-        <nav class="menu menu-horizontal">
-          <li >
-            <a href="../index.html" class="ghost-btn rounded-lg">Home</a>
-          </li>
-          <li>
-            <a href="activities.html" class="ghost-btn rounded-lg">Activities</a>
-          </li>
-          <li>
-            <a href="news.html" class="ghost-btn rounded-lg">News</a>
-          </li>
-          <!-- <li>
-            <a href="/education.html" class="ghost-btn rounded-lg">Education</a>
-          </li> -->
-          <li>
-            <a href="contribute.html" class="ghost-btn rounded-lg">Contribute</a>
-          </li>
-          <!-- <li>
-            <a href="/blog.html" class="ghost-btn rounded-lg">Blog</a>
-          </li> -->
-          <li>
-            <a href="team.html" class="ghost-btn rounded-lg">Team</a>
-          </li>
-        </nav>
-      </div>
-    </div>
-    <div class="navbar-end">
-      <!-- Navbar End -->
-      <!-- Dropdown navbar for samll devices -->
-      <div class="dropdown dropdown-end">
-        <div tabindex="0" class="m-1 btn btn-square btn-ghost lg:hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-            class="inline-block w-6 h-6 stroke-current">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </div>
-        <nav>
-          <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
-            <li class="active">
-              <a href="../index.html">Home</a>
-            </li>
-            <li class="nav">
-              <a href="activities.html">Activities</a>
-            </li>
-            <li class="nav">
-              <a href="news.html">News</a>
-            </li>
-            <li class="nav">
-              <a href="contribute.html">Contribute</a>
-            </li>
-            <!-- <li class="nav">
-              <a href="blog.html">Blog</a>
-            </li> -->
-            <li class="nav">
-              <a href="team.html">Team</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <!-- <button class="btn btn-square btn-ghost">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">             
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>             
-                </svg>
-              </button> -->
-    </div>
-    <!-- End of Dropdown Navbar -->
-  </div>
+  <div id="nav-placeholder"></div>
   
   <!-- hero -->
   <div class="bgcolormt bgcolor hero min-h-screen bg-base-100">
@@ -146,14 +75,14 @@
 
 
   <!-- current core members -->
-  <div class=" bgcolormt hero bgcolor bg-base-200 py-10 lg:py-16 w-full">
+  <div class=" bgcolormt hero bgcolor bg-base-400 py-10 lg:py-16 w-full">
     <div class="flex-col hero-content">
       <h1 class="mb-8 text-3xl lg:text-5xl font-bold">
         Current Team
       </h1>
       <div class="flex lg:flex-row flex-col flex-wrap gap-8 justify-center">
 
-        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+        <div class="card w-72 bg-base-100">
           <figure class="px-10 pt-10">
             <div class="avatar">
               <div class="items-center w-36 rounded-full">
@@ -164,7 +93,8 @@
           <div class="card-body items-center text-center">
             <h2 class="card-title">Prof. Sriharitha Rowthu</h2>
             <p>Faculty Advisor</p>
-            <div class="card-actions">
+            <!--Action button-->
+            <div class="card-actions mt-4">
               <a href="mailto:sriharitha.rowthu@iitgn.ac.in" class="btn btn-circle btn-ghost">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor" stroke-width="2">
@@ -178,19 +108,19 @@
 
         
 
-        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+        <div class="card w-72 bg-base-100">
           <figure class="px-10 pt-10">
             <div class="avatar">
               <div class="items-center w-36 rounded-full">
-                <img src="../Assets/team/VIshal_Ghoniya.jpg" loading="lazy"/>
+                <img src="../Assets/team/Prasad Pawar.jpg" loading="lazy"/>
               </div>
             </div>
           </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">Vishal Ghoniya</h2>
+          <div class="card-body_team items-center text-center">
+            <h2 class="card-title">Prasad Pawar</h2>
             <p>Core Team Member</p>
             <div class="card-actions">
-              <a href="mailto:vishalghoniya@iitgn.ac.in" class="btn btn-circle btn-ghost">
+              <a href="mailto:prasad.pawar@iitgn.ac.in" class="btn btn-circle btn-ghost">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round"
@@ -201,19 +131,19 @@
           </div>
         </div>
 
-        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+        <div class="card w-72 bg-base-100">
           <figure class="px-10 pt-10">
             <div class="avatar">
               <div class="items-center w-36 rounded-full">
-                <img src="../Assets/team/Aman Raj.jpg" loading="lazy"/>
+                <img src="../Assets/team/Trushika_Parmar.jpg" loading="lazy"/>
               </div>
             </div>
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title">Aman Raj</h2>
+            <h2 class="card-title">Trushika Parmar</h2>
             <p>Core Team Member</p>
             <div class="card-actions">
-              <a href="mailto:aman.raj@iitgn.ac.in" class="btn btn-circle btn-ghost">
+              <a href="mailto:rajnikantparmar@iitgn.ac.in" class="btn btn-circle btn-ghost">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round"
@@ -229,12 +159,12 @@
   </div>
 
   <!-- Current Organizing member -->
-  <div class="hero bg-base-200">
+  <div class="hero bg-base-400">
     <div class="flex-col hero-content">
      
-      <div class="flex lg:flex-row flex-col flex-wrap gap-8">
+      <div class="flex justify-center lg:flex-row flex-col flex-wrap gap-8">
 
-        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+        <!-- <div class="card w-70 bg-base-100">
           <figure class="px-10 pt-10">
             <div class="avatar">
               <div class="items-center w-36 rounded-full">
@@ -248,7 +178,7 @@
           </div>
         </div>
 
-        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+        <div class="card w-70 bg-base-100">
           <figure class="px-10 pt-10">
             <div class="avatar">
               <div class="items-center w-36 rounded-full">
@@ -262,7 +192,7 @@
           </div>
         </div>
 
-        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+        <div class="card w-70 bg-base-100">
           <figure class="px-10 pt-10">
             <div class="avatar">
               <div class="items-center w-36 rounded-full">
@@ -276,7 +206,7 @@
           </div>
         </div>
 
-        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+        <div class="card w-70 bg-base-100">
           <figure class="px-10 pt-10">
             <div class="avatar">
               <div class="items-center w-36 rounded-full">
@@ -290,7 +220,7 @@
           </div>
         </div>
 
-        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+        <div class="card w-70 bg-base-100">
           <figure class="px-10 pt-10">
             <div class="avatar">
               <div class="items-center w-36 rounded-full">
@@ -304,7 +234,7 @@
           </div>
         </div>
 
-        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+        <div class="card w-70 bg-base-100">
           <figure class="px-10 pt-10">
             <div class="avatar">
               <div class="items-center w-36 rounded-full">
@@ -316,9 +246,9 @@
             <h2 class="card-title">Mamta Bhambhani</h2>
             <p>Organizing Team Member</p>
           </div>
-        </div>
+        </div> -->
 
-        <!-- <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+        <!-- <div class="card w-72 bg-base-100  shadow-xl grayscale hover:grayscale-0">
           <figure class="px-10 pt-10">
             <div class="avatar">
               <div class="items-center w-36 rounded-full">
@@ -332,8 +262,118 @@
           </div>
         </div> -->
 
+        <div class="card w-70 bg-base-100">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="../Assets/team/Aniket Mishra.jpg" loading="lazy" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Aniket Mishra</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+        <div class="card w-70 bg-base-100">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="../Assets/team/Choden Tamang .jpg" loading="lazy" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Choden Tamang</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+
+        <div class="card w-70 bg-base-100">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="../Assets/team/Darpana Desai.jpg" loading="lazy" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Darpana Desai</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
         
-        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+        <div class="card w-70 bg-base-100">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="../Assets/team/Govind Garg.jpg" loading="lazy" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Govind Garg</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+        
+        <div class="card w-70 bg-base-100">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="../Assets/team/Jagruti Patil.jpeg" loading="lazy" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Jagruti Patil</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+        
+        <div class="card w-70 bg-base-100">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="../Assets/team/Jayashree Mahato .jpg" loading="lazy" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Jayshree Mahato</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+        
+        <div class="card w-70 bg-base-100">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="../Assets/team/Krishna Agarwal.jpg" loading="lazy" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Krishna Agarwal</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+        
+        <div class="card w-70 bg-base-100">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="../Assets/team/Neil_Shah.jpg" loading="lazy" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Neil Shah</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+        
+        <div class="card w-70 bg-base-100">
           <figure class="px-10 pt-10">
             <div class="avatar">
               <div class="items-center w-36 rounded-full">
@@ -347,19 +387,165 @@
           </div>
         </div>
         
-        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+        <div class="card w-70 bg-base-100">
           <figure class="px-10 pt-10">
             <div class="avatar">
               <div class="items-center w-36 rounded-full">
-                <img src="../Assets/team/Prasad Pawar.jpg" loading="lazy"/>
+                <img src="../Assets/team/Nupoor Assudani.jpeg" loading="lazy" />
               </div>
             </div>
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title">Prasad Pawar</h2>
+            <h2 class="card-title">Nupoor Assudani</h2>
             <p>Organizing Team Member</p>
           </div>
         </div>
+        
+        <div class="card w-70 bg-base-100">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="../Assets/team/Pooja Saikia.jpg" loading="lazy" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Pooja Saikia</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+        
+        <div class="card w-70 bg-base-100">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="../Assets/team/Prabhat Kumar.jpg" loading="lazy" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Prabhat Kumar</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+        
+        <div class="card w-70 bg-base-100">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="../Assets/team/Prasad Baddi.jpg" loading="lazy" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Prasad Baddi</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+        
+        <div class="card w-70 bg-base-100">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="../Assets/team/Pravalli Matta.jpg" loading="lazy" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Pravalli Matta</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+        
+        <div class="card w-70 bg-base-100">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="../Assets/team/Preety Shau.jpg" loading="lazy" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Preety Shau</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+        
+        <div class="card w-70 bg-base-100">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="../Assets/team/Priyanshi Shah.jpg" loading="lazy" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Priyanshi Shah</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+        
+        <div class="card w-70 bg-base-100">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="../Assets/team/Rahul Ahirwar.jpg" loading="lazy" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Rahul Ahirwar</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+
+
+        
+        <div class="card w-70 bg-base-100">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="../Assets/team/Ravi Kumawat.jpg" loading="lazy" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Ravi Kumawat</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+        
+        <div class="card w-70 bg-base-100">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="../Assets/team/Susmita R.jpg" loading="lazy" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Susmita R</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+        
+        <div class="card w-70 bg-base-100">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="../Assets/team/Trisha Biswas .jpg" loading="lazy" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Trisha Biswas</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+        
+        
+        
+        
         
         <!-- <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
           <figure class="px-10 pt-10">
@@ -374,7 +560,7 @@
             <p>Organizing Team Member</p>
           </div>
         </div> -->
-        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+        <!-- <div class="card w-70 bg-base-100">
           <figure class="px-10 pt-10">
             <div class="avatar">
               <div class="items-center w-36 rounded-full">
@@ -386,9 +572,9 @@
             <h2 class="card-title">Rahul Kumar</h2>
             <p>Organizing Team Member</p>
           </div>
-        </div>
+        </div> -->
 
-        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+        <!-- <div class="card w-70 bg-base-100">
           <figure class="px-10 pt-10">
             <div class="avatar">
               <div class="items-center w-36 rounded-full">
@@ -400,8 +586,8 @@
             <h2 class="card-title">RAJDEEP VRAJ</h2>
             <p>Organizing Team Member</p>
           </div>
-        </div>
-        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+        </div> -->
+        <div class="card w-70 bg-base-100">
           <figure class="px-10 pt-10">
             <div class="avatar">
               <div class="items-center w-36 rounded-full">
@@ -414,22 +600,8 @@
             <p>Organizing Team Member</p>
           </div>
         </div>
-
-        <!-- <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
-          <figure class="px-10 pt-10">
-            <div class="avatar">
-              <div class="items-center w-36 rounded-full">
-                <img src="../Assets/team/sonu.jpg" loading="lazy"/>
-              </div>
-            </div>
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">Sonu Meena</h2>
-            <p>Organizing Team Member</p>
-          </div>
-        </div> -->
-
-        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+<!-- 
+        <div class="card w-70 bg-base-100">
           <figure class="px-10 pt-10">
             <div class="avatar">
               <div class="items-center w-36 rounded-full">
@@ -439,34 +611,6 @@
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title">Tiyashi Roy</h2>
-            <p>Organizing Team Member</p>
-          </div>
-        </div>
-
-        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
-          <figure class="px-10 pt-10">
-            <div class="avatar">
-              <div class="items-center w-36 rounded-full">
-                <img src="../Assets/team/Trushika.jpg" loading="lazy" />
-              </div>
-            </div>
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">Trushika Parmar</h2>
-            <p>Organizing Team Member</p>
-          </div>
-        </div>
-
-        <!-- <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
-          <figure class="px-10 pt-10">
-            <div class="avatar">
-              <div class="items-center w-36 rounded-full">
-                <img src="../Assets/team/Vaishnavi_Khanapurkar.jpg" loading="lazy"/>
-              </div>
-            </div>
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">Vaishnavi Khanapurkar</h2>
             <p>Organizing Team Member</p>
           </div>
         </div> -->
@@ -632,6 +776,16 @@
                 <td>2018</span></td>
                 <td>Material Science</span></td>
               </tr>
+              <tr>
+                <td>Vishal Ghoniya</span></td>
+                <td>2024</span></td>
+                <td>Computer Science</span></td>
+              </tr>
+              <tr>
+                <td>Aman Raj</span></td>
+                <td>2024</span></td>
+                <td>Civil</span></td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -643,7 +797,7 @@
 
 
   <!-- prev oragniser -->
-  <div class="hero bgcolor bg-base-300 lg:py-16 w-full">
+  <div class="hero bgcolor bg-base-400 lg:py-16 w-full">
     <div class="flex-col hero-content">
       <h1 class="mb-0 lg:mb-8  text-3xl text-center lg:text-5xl font-bold " style="margin-top: 20px;">
         Previous Organizing Member
@@ -749,6 +903,56 @@
                 <td>2024</span></td>
                 <td>Computer Science Engineering</span></td>
               </tr>
+              <tr>
+                <td>Harsh Jaitwal</span></td>
+                <td>2025</span></td>
+                <td>Chemical Engineering</span></td>
+              </tr>
+              <tr>
+                <td>Chahat Beniwal</span></td>
+                <td>2026</span></td>
+                <td>Civil Engineering</span></td>
+              </tr>
+              <tr>
+                <td>Mamta Bhambhani</span></td>
+                <td>2026</span></td>
+                <td>Electrical Engineering</span></td>
+              </tr>
+              <tr>
+                <td>Nidhi Kumari</span></td>
+                <td>2025</span></td>
+                <td>Chemical Engineering</span></td>
+              </tr>
+              <tr>
+                <td>Prasad Pawar</span></td>
+                <td>2028</span></td>
+                <td>Physics</span></td>
+              </tr>
+              <tr>
+                <td>Rajdeep Vraj</span></td>
+                <td>2026</span></td>
+                <td>Civil Engineering</span></td>
+              </tr>
+              <tr>
+                <td>Ranjeet Kumar</span></td>
+                <td>2024</span></td>
+                <td>Chemical Engineering</span></td>
+              </tr>
+              <tr>
+                <td>Chirag Sarda</span></td>
+                <td>2024</span></td>
+                <td>Computer Science Engineering</span></td>
+              </tr>
+              <tr>
+                <td>Chirag Sarda</span></td>
+                <td>2024</span></td>
+                <td>Computer Science Engineering</span></td>
+              </tr>
+              <tr>
+                <td>Chirag Sarda</span></td>
+                <td>2024</span></td>
+                <td>Computer Science Engineering</span></td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -805,11 +1009,21 @@
       </div>
     </div>
     <div>
-      <p>Copyright © 2022 - Nyasa, IIT Gandhinagar</p>
+      <p>Copyright © 2024 - Nyasa, IIT Gandhinagar</p>
     </div>
   </footer>
   <!-- js file -->
   <script src="script.js"></script>
+
+  <script>
+    // Fetch and include nav.html content
+    fetch('nav.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('nav-placeholder').innerHTML = html;
+      });
+  </script>
+  
 
 </body>
 

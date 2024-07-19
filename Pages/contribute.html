@@ -18,87 +18,13 @@
     </head>
     <body>
       <!-- navbar -->
-      <div class="navbar mb-2 fixed w-full z-10 top-0 border-b bg-base-100 text-base-content ">
-        <div class="px-2 mx-2 navbar-start">
-          <div class="text-lg font-bold w-7">
-            <img src="../Assets/Nyasa_logo.png" loading="lazy" style="width: 80px;">
-          </div>
-        </div>
-        <div class="hidden px-2 mx-2 navbar-center lg:flex">
-          <div class="flex items-stretch">
-            <nav class="menu menu-horizontal">
-              <li >
-                <a href="../index.html" class="ghost-btn rounded-lg">Home</a>
-              </li>
-              <li>
-                <a href="activities.html" class="ghost-btn rounded-lg">Activities</a>
-              </li>
-              <li>
-                <a href="news.html" class="ghost-btn rounded-lg">News</a>
-              </li>
-              <!-- <li>
-                <a href="/education.html" class="ghost-btn rounded-lg">Education</a>
-              </li> -->
-              <li>
-                <a href="contribute.html" class="ghost-btn rounded-lg">Contribute</a>
-              </li>
-              <!-- <li>
-                <a href="/blog.html" class="ghost-btn rounded-lg">Blog</a>
-              </li> -->
-              <li>
-                <a href="team.html" class="ghost-btn rounded-lg">Team</a>
-              </li>
-            </nav>
-          </div>
-        </div>
-        <div class="navbar-end">
-          <!-- Navbar End -->
-          <!-- Dropdown navbar for samll devices -->
-          <div class="dropdown dropdown-end">
-            <div tabindex="0" class="m-1 btn btn-square btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                class="inline-block w-6 h-6 stroke-current">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-            </div>
-            <nav>
-              <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
-                <li class="active">
-                  <a href="../index.html">Home</a>
-                </li>
-                <li class="nav">
-                  <a href="activities.html">Activities</a>
-                </li>
-                <li class="nav">
-                  <a href="news.html">News</a>
-                </li>
-                <li class="nav">
-                  <a href="contribute.html">Contribute</a>
-                </li>
-                <!-- <li class="nav">
-                  <a href="blog.html">Blog</a>
-                </li> -->
-                <li class="nav">
-                  <a href="team.html">Team</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <!-- <button class="btn btn-square btn-ghost">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">             
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>             
-                    </svg>
-                  </button> -->
-        </div>
-        <!-- End of Dropdown Navbar -->
-      </div>
-
+      <div id="nav-placeholder"></div>
         <!-- hero -->
-        <div class="hero min-h-screen bg-base-200">
+        <div class="hero min-h-screen bg-base-100">
           <div class="hero-content flex-col lg:flex-row-reverse">
             <img src="../Assets/hero.png" loading="lazy" class="w-5/6 lg:w-3/5 mt-24 lg:mt-24 lg:ml-16">
-            <div class="card flex-shrink-0 w-full max-w-md shadow-2xl bg-base-100 lg:mt-24 mb-8">
-              <div class="card-body">
+            <div class="contri flex-shrink-0 w-full max-w-md shadow-2xl bg-base-400 lg:mt-24 mb-8">
+              <div class="card-contri">
                 <h1 class="text-3xl font-bold text-primary">
                   Make a change!
                 </h1>
@@ -138,8 +64,8 @@
                 </div>
                 
                 <p>Prof. Sriharitha Rowthu (Faculty Advisor) <a class="link link-hover pb-3" target="_blank" rel="noopener noreferrer" href="mailto:sriharitha.rowthu@iitgn.ac.in">sriharitha.rowthu@iitgn.ac.in</a></p>
-                <p>Vishal Ghoniya (Student Coordinator) <a class="link link-hover pb-3" target="_blank" rel="noopener noreferrer" href="mailto:vishalghoniya@iitgn.ac.in">vishalghoniya@iitgn.ac.in</a></p>
-                <p>Aman Raj (Student Coordinator) <a class="link link-hover pb-3" target="_blank" rel="noopener noreferrer" href="mailto:aman.raj@iitgn.ac.in">aman.raj@iitgn.ac.in</a></p>
+                <p>Prasad Pawar (core member) <a class="link link-hover pb-3" target="_blank" rel="noopener noreferrer" href="mailto:prasad.pawar@iitgn.ac.in">prasad.pawar@iitgn.ac.in</a></p>
+                <p>Trushika Parmar (core member) <a class="link link-hover pb-3" target="_blank" rel="noopener noreferrer" href="mailto:rajnikantparmar@iitgn.ac.in">rajnikantparmar@iitgn.ac.in</a></p>
 
                 <div class="flex flex-row pt-6">
                   <a href="https://donate.iitgn.ac.in/nyasa" class="btn btn-primary">DONATE</a>
@@ -196,12 +122,21 @@
         </div>
       </div>
       <div>
-        <p>Copyright © 2022 - Nyasa, IIT Gandhinagar</p>
+        <p>Copyright © 2024 - Nyasa, IIT Gandhinagar</p>
       </div>
     </footer>
     <!-- js file -->
     <script src="script.js"></script>
-        
+    
+    <script>
+      // Fetch and include nav.html content
+      fetch('nav.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('nav-placeholder').innerHTML = html;
+        });
+    </script>
+    
 
     </body>
 </html>

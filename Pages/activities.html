@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
   <link rel="manifest" href="../site.webmanifest">
+ 
 
   <style>
     .activePage {
@@ -25,81 +26,8 @@
 </head>
 
 <body>
-  <!-- navbar -->
-  <div class="navbar mb-2 fixed w-full z-10 top-0 border-b bg-base-100 text-base-content ">
-    <div class="px-2 mx-2 navbar-start">
-      <div class="text-lg font-bold w-7">
-        <img src="../Assets/Nyasa_logo.png" loading="lazy" style="width: 80px;">
-      </div>
-    </div>
-    <div class="hidden px-2 mx-2 navbar-center lg:flex">
-      <div class="flex items-stretch">
-        <nav class="menu menu-horizontal">
-          <li>
-            <a href="../index.html" class="ghost-btn rounded-lg">Home</a>
-          </li>
-          <li>
-            <a href="activities.html" class="ghost-btn rounded-lg">Activities</a>
-          </li>
-          <li>
-            <a href="news.html" class="ghost-btn rounded-lg">News</a>
-          </li>
-          <!-- <li>
-            <a href="/education.html" class="ghost-btn rounded-lg">Education</a>
-          </li> -->
-          <li>
-            <a href="contribute.html" class="ghost-btn rounded-lg">Contribute</a>
-          </li>
-          <!-- <li>
-            <a href="/blog.html" class="ghost-btn rounded-lg">Blog</a>
-          </li> -->
-          <li>
-            <a href="team.html" class="ghost-btn rounded-lg">Team</a>
-          </li>
-        </nav>
-      </div>
-    </div>
-    <div class="navbar-end">
-      <!-- Navbar End -->
-      <!-- Dropdown navbar for samll devices -->
-      <div class="dropdown dropdown-end">
-        <div tabindex="0" class="m-1 btn btn-square btn-ghost lg:hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-            class="inline-block w-6 h-6 stroke-current">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </div>
-        <nav>
-          <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
-            <li class="active">
-              <a href="../index.html">Home</a>
-            </li>
-            <li class="nav">
-              <a href="activities.html">Activities</a>
-            </li>
-            <li class="nav">
-              <a href="news.html">News</a>
-            </li>
-            <li class="nav">
-              <a href="contribute.html">Contribute</a>
-            </li>
-            <!-- <li class="nav">
-              <a href="blog.html">Blog</a>
-            </li> -->
-            <li class="nav">
-              <a href="team.html">Team</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <!-- <button class="btn btn-square btn-ghost">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">             
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>             
-                </svg>
-              </button> -->
-    </div>
-    <!-- End of Dropdown Navbar -->
-  </div>
+
+  <div id="nav-placeholder"></div>
 
   <!-- hero -->
   <div class="hero min-h-screen bg-base-100">
@@ -128,17 +56,41 @@
 
 
 
-  <!-- Current going activity -->
-  <div class="hero bg-base-200 py-16" id="activities">
+  <!-- Palaj and Basan Primary School Programs -->
+  <div class="hero bg-base-400 py-16" id="activities">
     <div class="flex-col hero-content">
-      <h1 class="mb-12 text-5xl font-bold">
-        Current Going Activities
+      <h1 class="mb-12 text-5xl text-center font-bold">
+        Palaj and Basan Primary School Programs
       </h1>
+      <div class="grid grid-cols-1 gap-8">
 
+        <!-- <div class="visit_card  bg-base-100 rounded-lg mons">
+          <div class="card  flex flex-col lg:flex-row">
+            <img src="../Assets/activities/Visit.png" loading="lazy" alt="" class="thumbnail img_width">
+            <div class="card detail lg:ml-[10px]">
+              <div class="top flex flex-row">
+                <h2 class="text-3xl card-title p-4 mb-2">Visit during Inter IIT Sports Meet</h2>
+              </div>
+              <div class="middle px-10  text-l">
 
-      <div class="grid grid-cols-1 gap-8 ">
+                <p class="mb-4">Nyasa arranged a one day visit of each Basan and Palaj school student of class 6th-8th during the Inter IIT sports meet. From intense squash showdowns to exhilarating football clashes, every match brought joy to their faces. A day filled with adventure, and unforgettable memories. Not just only the games, the kids also had interactions and good times with different contingents! 
+                </p>
+              </div>
+               <div class="card-actions absolute " style=" right:45px; bottom:25px;">
+                <a href="Activities/summercamp.html"><button class="btn btn-primary">Know More &nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button></a>
+              </div> 
+            </div>
+          </div>
+        </div> -->
 
-        <!-- Akanksha - Nurturing Dreams -->
+        <!--Akanksha-->
+        
         <div class="akanksha_card  bg-base-100 rounded-lg mons">
           <div class="card  flex flex-col lg:flex-row">
             <img src="../Assets/activities/Akanksha.png" loading="lazy" alt="" class="thumbnail img_width">
@@ -146,16 +98,14 @@
               <div class="top flex flex-row">
                 <h2 class="text-3xl card-title p-4 mb-2">Akanksha : Empower Young Minds</h2>
               </div>
-              <div class="middle px-10  text-xl">
+              <div class="middle px-10  text-l">
 
                 <p class="mb-4"><span class="font-bold ">Our Mission: </span> Empower young minds in Palaj and Basan,
                   focusing on Government school children in grades 6th to 8th. We aim to build a strong educational
                   foundation and cultivate a lifelong love for learning.
                 </p>
                 <p class="mb-4"><span class="font-bold ">How We Make a Difference: </span>
-                 Through interactive learning sessions, mentorship, and empowerment, we help students excel
-                  academically and personally. We ignite their aspirations, paving the way for a brighter community
-                  future.
+                  Through interactive learning sessions, mentorship, and empowerment, Nyasa's Akanksha program aims to enhance academic and personal growth among students at Palaj and Basan Government schools. Our dedicated volunteers provide personalized support, igniting aspirations and fostering a brighter community future.
                 </p>
                 <p class="mb-4">Join us in our commitment to nurturing dreams and making education accessible to all.
                   Together, we can create a world where every child has the opportunity to reach their full potential.
@@ -176,25 +126,19 @@
           </div>
         </div>
 
-        <!-- Umeed -->
-        <div class="umeed_card  bg-base-100 rounded-lg mons">
+        <!--Ganesh Chaturthi Celebration-->
+        
+        <div class="GCC_card  bg-base-100 rounded-lg mons">
           <div class="card  flex flex-col lg:flex-row">
-            <img src="../Assets/activities/Umeed.png" loading="lazy" alt="" class="thumbnail img_width"
-              style="width: 400px;">
+            <img src="../Assets/activities/Ganesh_Chaturthi.png" loading="lazy" alt="" class="thumbnail img_width">
             <div class="card detail lg:ml-[20px]">
               <div class="top flex flex-row">
-                <h2 class="text-3xl card-title p-4 mb-2">Umeed</h2>
+                <h2 class="text-3xl card-title p-4 mb-2">Ganesh Chaturthi Celebration</h2>
               </div>
-              <div class="middle px-10  text-xl">
-                <p class="mb-4"><span class="text-primary">Umeed</span> - 'to give hope'. This is a long-term initiative
-                  that is planned to
-                  target contractual workers of IITGN and higher school students of nearby villages.
+              <div class="middle px-10  text-l">
+                <p class="mb-4">
+                  Basan Kids joined the Ganesh Utsav celebrations at IITGN, enjoying various activities. They created portraits of Lord Ganesh, got inspired by the theme of Chandrayaan 2, and received stationery kits for participation. The event combined culture, creativity, and education, leaving a lasting impression on everyone involved.
                 </p>
-                <p class="mb-4"><span class="font-bold ">Phase 1:</span> In the first phase, we focus on the contractual workers of IITGN, including security guards, with the goal of enhancing their skills. We provide them with opportunities to improve their English proficiency, acquire basic computer skills, and support those preparing for various examinations. Our aim is to boost their career prospects and overall well-being.
-                </p>
-                <!-- <p class="mb-4"><span class="font-bold">Phase 2:</span> In the second phase, we extend our reach to the higher-school students of nearby villages. Here, students of IITGN step in as mentors, dedicating 1-2 hours to coach these young talents aspiring to excel in exams like JEE-Main, JEE-Advanced, or state-level entrance exams. 
-                </p> -->
-                <p class="mb-4">Be part of our Umeed initiative, contributing to bridging the digital divide within our community. </p>
               </div>
               <!-- <div class="card-actions absolute " style=" right:45px; bottom:25px;">
                 <a href="Activities/summercamp.html"><button class="btn btn-primary">Know More &nbsp;
@@ -208,6 +152,90 @@
             </div>
           </div>
         </div>
+
+
+   <!--Wildlife Week Celebration-->
+        
+        <div class="WWC_card  bg-base-100 rounded-lg mons">
+          <div class="card  flex flex-col lg:flex-row">
+            <img src="../Assets/activities/Wildlife_celeberation.png" loading="lazy" alt="" class="thumbnail img_width">
+            <div class="card detail lg:ml-[20px]">
+              <div class="top flex flex-row">
+                <h2 class="text-3xl card-title p-4 mb-2">Wildlife Week Celebration</h2>
+              </div>
+              <div class="middle px-10  text-l">
+                <p class="mb-4">
+                  Palaj government school children participated in several events during the National Wildlife Week organized by KPCSD from October 4th to 8th. They enjoyed wildlife documentary screening, interactive quizzes, CCL sessions, and wild species exhibitions by the Seven Bad Birders team. Nyasa handled the “Nature Fest” event, during which our campus and Nyasa school kids brought the jungle to life with a fantastic fancy dress show, transforming into their favorite animals and mimicking them.
+                </p>
+              </div>
+              <!-- <div class="card-actions absolute " style=" right:45px; bottom:25px;">
+                <a href="Activities/summercamp.html"><button class="btn btn-primary">Know More &nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button></a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+   <!--Taare Zameen Par-->
+        
+        <div class="WWC_card  bg-base-100 rounded-lg mons">
+          <div class="card  flex flex-col lg:flex-row">
+            <img src="../Assets/activities/Taare_Zameen_Par.png" loading="lazy" alt="" class="thumbnail img_width">
+            <div class="card detail lg:ml-[20px]">
+              <div class="top flex flex-row">
+                <h2 class="text-3xl card-title p-4 mb-2">Taare Zameen Par</h2>
+              </div>
+              <div class="middle px-10  text-l">
+                <p class="mb-4">
+                  Nyasa, in collaboration with Odyssey - The Astronomy Club, organized a star gazing session for the students of Basan Government School. On 20th March, the students used a manual reflector telescope to observe Jupiter and the moon while enjoying views of Orion's Nebula through the eVscope 2 digital telescope. The Odyssey team satisfied the children's curiosity about the cosmos, lasers, and telescopes.
+                </p>
+              </div>
+              <!-- <div class="card-actions absolute " style=" right:45px; bottom:25px;">
+                <a href="Activities/summercamp.html"><button class="btn btn-primary">Know More &nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button></a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+   <!--Special Teaching Session: Joy of Reading-->
+        
+        <div class="WWC_card  bg-base-100 rounded-lg mons">
+          <div class="card  flex flex-col lg:flex-row">
+            <img src="../Assets/activities/Special_Teaching.png" loading="lazy" alt="" class="thumbnail img_width">
+            <div class="card detail lg:ml-[20px]">
+              <div class="top flex flex-row">
+                <h2 class="text-3xl card-title p-4 mb-2">Special Teaching Session: Joy of Reading</h2>
+              </div>
+              <div class="middle px-10  text-l">
+                <p class="mb-4">
+                  We organized a session for students in grades 3-5 at Government Primary School Basan, Gandhinagar. Under the guidance of Sathyanarayan Mundayoor, also known as Uncle Moosa and a recipient of the Padma Shri award, along with volunteer Nishanlu, an MA student at CUG, students were treated to beautiful poetry recitals and animated storytelling. From flying with Chidiya to exploring geography through tales, the session left students spellbound and eager for more.
+                </p>
+              </div>
+              <!-- <div class="card-actions absolute " style=" right:45px; bottom:25px;">
+                <a href="Activities/summercamp.html"><button class="btn btn-primary">Know More &nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button></a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+
 
         <!-- Daily Sport -->
         <!-- <div class="sport_daily_card  bg-base-100 rounded-lg mons">
@@ -260,23 +288,18 @@
       <div class="grid grid-cols-1 gap-8 ">
 
         <!-- Summer Camp -->
-        <div class="summer_camp_card  bg-base-200 rounded-lg mons">
+        <div class="summer_camp_card  bg-base-400 rounded-lg mons">
           <div class="card  flex flex-col lg:flex-row">
             <img src="../Assets/activities/sn.jpg" loading="lazy" alt="" class="thumbnail  img_width">
             <div class="card detail lg:ml-[20px]">
               <div class="top flex flex-row">
                 <h2 class="text-3xl card-title p-10">Nyasa Summer Camp</h2>
               </div>
-              <div class="middle px-10  text-xl">
-                <p style="  margin-left:10px;">Nyasa had concluded a successful summer camp for the 95 kids from the
-                  nearby villages and IITGN
-                  construction worker colonies.
+              <div class="middle px-10  text-l">
+                <p style="  margin-left:10px;">Nyasa had concluded a successful 10-day summer camp was conducted from 25th May 2023 to 3rd June 2023 for 100+ children from  Government Primary school, Palaj and construction workers’ colonies of IITGN.
                 </p>
-                <p style="margin-top: 10px; margin-left:10px; margin-bottom:80px">Ten days program was scheduled in
-                  which a variety of
-                  activities ranging
-                  from art & craft, music, dancing, and sports to science experiments, archaeology sessions, and
-                  computer training lessons.</p>
+                <p style="margin-top: 10px; margin-left:10px; margin-bottom:80px">Our was aimed at helping these kids explore their hobbies and hidden talents. The camp featured a plethora of exciting hands-on activities on various themes and learning modules to inspire the kids while having fun, promoting critical thinking, inculcating leadership skills, and creating a memorable experience. It included activities ranging from art to music, dance to science experiments, archaeology to sports, awareness sessions, Anand Mela, basics of computer skills. About 35 mentors, including students, faculty, and community members of IITGN, conducted various sessions with the help of about 50 student volunteers from the  IITGN community. 
+                </p>
               </div>
               <div class="card-actions absolute " style=" right:45px; bottom:25px;">
                 <a href="Activities/summercamp.html"><button class="btn btn-primary">Know More &nbsp;
@@ -291,15 +314,53 @@
           </div>
         </div>
 
+
+        
+        <!-- Umeed -->
+        <div class="umeed_card  bg-base-400 rounded-lg mons">
+          <div class="card  flex flex-col lg:flex-row">
+            <img src="../Assets/activities/Umeed.png" loading="lazy" alt="" class="thumbnail img_width"
+              style="width: 400px;">
+            <div class="card detail lg:ml-[20px]">
+              <div class="top flex flex-row">
+                <h2 class="text-3xl card-title p-4 mb-2">Umeed</h2>
+              </div>
+              <div class="middle px-10  text-l">
+                <p class="mb-4"><span class="text-primary">Umeed</span> - 'to give hope'. This is a long-term initiative
+                  that is planned to
+                  target contractual workers of IITGN such as security guards, housekeeping etc.
+                </p>
+                <p class="mb-4">During the period from October to December, Nyasa successfully executed the Umeed program, dedicated to uplifting the skills of contractual workers at IITGN, notably including security guards. Our Umeed initiative strategically addresses the digital divide among our contracted staff, offering comprehensive training in essential computer skills and English proficiency. It was thoughtfully structured to accommodate both morning and evening sessions, ensuring flexibility for every guard to attend based on their availability.
+
+                </p>
+                <!-- <p class="mb-4"><span class="font-bold">Phase 2:</span> In the second phase, we extend our reach to the higher-school students of nearby villages. Here, students of IITGN step in as mentors, dedicating 1-2 hours to coach these young talents aspiring to excel in exams like JEE-Main, JEE-Advanced, or state-level entrance exams. 
+                </p> -->
+                <p class="mb-4">Be part of our Umeed initiative, contributing to bridging the digital divide within our community. </p>
+              </div>
+              <!-- <div class="card-actions absolute " style=" right:45px; bottom:25px;">
+                <a href="Activities/summercamp.html"><button class="btn btn-primary">Know More &nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button></a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+
+
         <!-- Sanjeevani Medical Camp -->
-        <div class="sanjeevani_camp_card  bg-base-200 rounded-lg mons">
+        <div class="sanjeevani_camp_card  bg-base-400 rounded-lg mons">
           <div class="card  flex flex-col lg:flex-row">
             <img src="../Assets/activities/sanjeevani.png" loading="lazy" alt="" class="thumbnail img_width">
             <div class="card detail lg:ml-[20px]">
               <div class="top flex flex-row">
                 <h2 class="text-3xl card-title p-10">Sanjeevani Medical Camp</h2>
               </div>
-              <div class="middle px-10  text-xl">
+              <div class="middle px-10  text-l">
                 <p style="  margin-left:10px;">Sanjeevani, the flagship
                   event of Nyasa conducted every year, is a health camp that brings
                   together people from villages, community
@@ -307,12 +368,7 @@
                   they can interact engage and resolve their
                   health issues.
                 </p>
-                <p style="margin-top: 10px; margin-left:10px; margin-bottom:80px">Different stalls and awareness
-                  programs were
-                  conducted that included Nutrition and Physical
-                  Fitness and First Aid, Hygiene, Waste Disposal
-                  and safe drinking water, Diseases, Nasha Mukti, Men's/women's
-                  health and wellbeing, Child’s health and wellbeing.</p>
+                <p style="margin-top: 10px; margin-left:10px; margin-bottom:80px">The 8th Sanjeevani health camp was held in Borij village, Gandhinagar, on February 4, 2024. Over 500 people from the community were helped with basic health checkups and immediate medication. The event had support from 30 volunteers and 9 medical professionals. Alongside the checkups, there was a cancer awareness stall and games for children. After the first camp, a follow-up checkup event was held for people needing ongoing treatment. Around 20 individuals received further medical evaluation at the Civil Hospital. This shows the success of our efforts in ensuring patients received the necessary follow-up care.</p>
               </div>
               <div class="card-actions absolute " style=" right:45px; bottom:25px;">
                 <a href="Activities/sanjeevani.html"><button class="btn btn-primary">Know More &nbsp;
@@ -330,14 +386,14 @@
 
 
         <!-- Pathway to schooling -->
-        <div class="summer_camp_card  bg-base-200 rounded-lg mons">
+        <div class="summer_camp_card  bg-base-400 rounded-lg mons">
           <div class="card  flex flex-col lg:flex-row">
             <img src="../Assets/activities/Pathway to Schooling1.png" loading="lazy" alt="" class="thumbnail img_width">
             <div class="card detail lg:ml-[20px]">
               <div class="top flex flex-row">
                 <h2 class="text-3xl card-title p-10">Pathway Program</h2>
               </div>
-              <div class="middle px-10  text-xl">
+              <div class="middle px-10  text-l">
                 <p style="  margin-left:10px;">Nyasa has always been for the students, by the students. Nyasa's goal has
                   always been to support and educate underprivileged children, see them grow as individuals, and help
                   them achieve their goals.
@@ -360,25 +416,25 @@
           </div>
         </div>
 
+
         <!-- Distrubution Drive -->
-        <div class="summer_camp_card  bg-base-200 rounded-lg mons">
+        <div class="summer_camp_card  bg-base-400 rounded-lg mons">
           <div class="card  flex flex-col lg:flex-row">
             <img src="../Assets/activities/distribution.png" loading="lazy" alt="" class="thumbnail img_width">
             <div class="card detail lg:ml-[20px]">
               <div class="top flex flex-row">
                 <h2 class="text-3xl card-title p-10">Distribution Drive</h2>
               </div>
-              <div class="middle px-10  text-xl">
-                <p style="  margin-left:10px;">Nyasa, in collaboration with the institute's social
-                  outreach, distributed essential items during the
-                  pandemic, to the people of villeges around the IIT Gandhinagar Campus.
+              <div class="middle px-10  text-l">
+                <p style="  margin-left:10px;">Throughout the year, Nyasa organized four distribution drives aimed at benefiting various groups, including construction workers of IITGN from the previous year, metro workers residing in front of Gate 2, and contractual workers encompassing staff from housekeeping, horticulture, mess, laundry, and security departments. The distributed items included men's, ladies', and children's wear, plain clothes, bed sheets, pillows, footwear, toys, blankets, bags, and ladies' accessories.
+
 
                 </p>
-                <p style="margin-top: 10px; margin-left:10px; margin-bottom:80px">Nyasa, in collaboration with the
+                <!-- <p style="margin-top: 10px; margin-left:10px; margin-bottom:80px">Nyasa, in collaboration with the
                   institute's social
                   outreach, distributed items such as masks, reusable sanitary
                   napkins, mosquito repellent coils, fruit
-                  packets , and sweets.</p>
+                  packets , and sweets.</p> -->
               </div>
               <div class="card-actions absolute " style=" right:45px; bottom:25px;">
                 <a href="Activities/clothdistribution.html"><button class="btn btn-primary">Know More &nbsp;
@@ -396,6 +452,7 @@
       </div>
     </div>
   </div>
+  
 
   <!-- footer -->
   <footer class="p-10 footer bg-neutral text-neutral-content footer-center">
@@ -444,7 +501,7 @@
       </div>
     </div>
     <div>
-      <p>Copyright © 2022 - Nyasa, IIT Gandhinagar</p>
+      <p>Copyright © 2024 - Nyasa, IIT Gandhinagar</p>
     </div>
   </footer>
   <!-- js file -->
@@ -459,6 +516,15 @@
     })
   </script>
   <script src="script.js"></script>
+  <script>
+    // Fetch and include nav.html content
+    fetch('nav.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('nav-placeholder').innerHTML = html;
+      });
+  </script>
+  
 
 </body>
 
