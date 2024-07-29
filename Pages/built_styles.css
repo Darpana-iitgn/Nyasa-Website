@@ -8078,3 +8078,38 @@ textarea.form-control.is-invalid {
   color: rgb(8, 165, 165);
 }
 
+
+/* Slick Carousel Arrows */
+.slick-prev, .slick-next {
+    z-index: 1;
+    cursor: pointer;
+    font-size: 24px; /* Adjust as needed */
+    background: none;
+    border: none;
+    color: white; /* White arrow color */
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+.slick-prev:focus, .slick-next:focus {
+    outline: none; /* Remove default focus outline */
+}
+
+.slick-prev::before {
+    content: "\2190"; /* Unicode for left arrow */
+}
+
+.slick-next::before {
+    content: "\2192"; /* Unicode for right arrow */
+}
