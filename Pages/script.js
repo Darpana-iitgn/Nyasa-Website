@@ -1,3 +1,14 @@
+$(document).ready(function(){
+            $('#educationCarousel.carousel').slick({
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: true,
+                prevArrow: '#educationCarousel.carousel-control-prev',
+                nextArrow: '#educationCarousel.carousel-control-next'
+            });
+        });
+
 const activePage = window.location.pathname;
 // console.log(activePage)
 const navLinks = document.querySelectorAll('nav a').forEach(link =>{
@@ -42,27 +53,7 @@ imagePopup.addEventListener('click', function() {
 // Prevent the click event on the popup itself from closing it
 popupImage.addEventListener('click', function(event) {
   event.stopPropagation();
-});
-
-$(document).ready(function(){
-    $('.carousel').slick({
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        arrows: true, // Enables navigation arrows
-        infinite: true,
-        dots: true,
-        prevArrow: '<button type="button" class="slick-prev">&#10094;</button>',
-        nextArrow: '<button type="button" class="slick-next">&#10095;</button>',
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    });   
+});   
 });
 
 
