@@ -8077,7 +8077,10 @@ textarea.form-control.is-invalid {
 .text-success{
   color: rgb(8, 165, 165);
 }
-
+.education-section {
+  position: relative;  /* Ensure the section is positioned relative to place absolute children */
+  width: 100%;         /* Full width of the container */
+}
 /* Styling for Slick carousel arrows */
         .carousel-control-prev, .carousel-control-next {
             position: absolute;
@@ -8109,3 +8112,13 @@ textarea.form-control.is-invalid {
  .carousel {
             background-color: #ffffff; /* Optional: Set background color */
         }
+.carousel {
+  margin-top: 50px;    /* Adjust the margin to ensure the slider is not hidden behind the heading */
+  /* Your existing slider styles */
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
