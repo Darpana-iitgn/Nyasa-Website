@@ -8113,3 +8113,21 @@ textarea.form-control.is-invalid {
 .slick-next::before {
     content: "\2192"; /* Unicode for right arrow */
 }
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust background color */
+    color: white; /* Arrow color */
+    border: none;
+    font-size: 24px; /* Adjust size as needed */
+    z-index: 1;
+}
+
+.carousel-control-prev {
+    left: 10px; /* Position left */
+}
+
+.carousel-control-next {
+    right: 10px; /* Position right */
+}
