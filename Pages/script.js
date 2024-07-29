@@ -1,18 +1,3 @@
-$(document).ready(function(){
-            // Using the full version of jQuery to initialize the Slick Carousel
-            jQuery.noConflict();
-            (function($) {
-                $('#educationCarousel.carousel').slick({
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    dots: true,
-                    arrows: true,
-                    prevArrow: '#educationCarousel.carousel-control-prev',
-                    nextArrow: '#educationCarousel.carousel-control-next'
-                });
-            })(jQuery);
-        });
-
 const activePage = window.location.pathname;
 // console.log(activePage)
 const navLinks = document.querySelectorAll('nav a').forEach(link =>{
@@ -58,6 +43,22 @@ imagePopup.addEventListener('click', function() {
 popupImage.addEventListener('click', function(event) {
   event.stopPropagation();
 });   
+
+$(document).ready(function(){
+            // Using the full version of jQuery to initialize the Slick Carousel
+            jQuery.noConflict();
+            (function($) {
+                $('.carousel').slick({
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: true,
+                    prevArrow: '.carousel-control-prev',
+                    nextArrow: '.carousel-control-next'
+                });
+            })(jQuery);
+        });
+
 });
 
 
