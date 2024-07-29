@@ -2,13 +2,13 @@ $(document).ready(function(){
             // Using the full version of jQuery to initialize the Slick Carousel
             jQuery.noConflict();
             (function($) {
-                $('#educationCarousel .carousel').slick({
+                $('#educationCarousel.carousel').slick({
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     dots: true,
                     arrows: true,
-                    prevArrow: '#educationCarousel .carousel-control-prev',
-                    nextArrow: '#educationCarousel .carousel-control-next'
+                    prevArrow: '#educationCarousel.carousel-control-prev',
+                    nextArrow: '#educationCarousel.carousel-control-next'
                 });
             })(jQuery);
         });
