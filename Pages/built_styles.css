@@ -8078,56 +8078,34 @@ textarea.form-control.is-invalid {
   color: rgb(8, 165, 165);
 }
 
+/* Styling for Slick carousel arrows */
+        .carousel-control-prev, .carousel-control-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            z-index: 1;
+            cursor: pointer;
+        }
 
-/* Slick Carousel Arrows */
-.slick-prev, .slick-next {
-    z-index: 1;
-    cursor: pointer;
-    font-size: 24px; /* Adjust as needed */
-    background: none;
-    border: none;
-    color: white; /* White arrow color */
-    width: 40px; /* Adjust as needed */
-    height: 40px; /* Adjust as needed */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        .carousel-control-prev {
+            left: -25px; /* Adjust as needed */
+        }
 
-.slick-prev {
-    left: 10px;
-}
+        .carousel-control-next {
+            right: -25px; /* Adjust as needed */
+        }
 
-.slick-next {
-    right: 10px;
-}
+        .carousel-control-prev:focus, .carousel-control-next:focus {
+            outline: none; /* Remove focus outline */
+        }
 
-.slick-prev:focus, .slick-next:focus {
-    outline: none; /* Remove default focus outline */
-}
-
-.slick-prev::before {
-    content: "\2190"; /* Unicode for left arrow */
-}
-
-.slick-next::before {
-    content: "\2192"; /* Unicode for right arrow */
-}
-.carousel-control-prev, .carousel-control-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust background color */
-    color: white; /* Arrow color */
-    border: none;
-    font-size: 24px; /* Adjust size as needed */
-    z-index: 1;
-}
-
-.carousel-control-prev {
-    left: 10px; /* Position left */
-}
-
-.carousel-control-next {
-    right: 10px; /* Position right */
-}
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            font-size: 30px;
+        }
+ .carousel {
+            background-color: #ffffff; /* Optional: Set background color */
+        }
