@@ -10,9 +10,8 @@ $(document).ready(function(){
             nextArrow: '<button type="button" class="slick-next">&gt;</button>'
         });
     })(jQuery);
-});
 
-const activePage = window.location.pathname;
+    const activePage = window.location.pathname;
 // console.log(activePage)
 const navLinks = document.querySelectorAll('nav a').forEach(link =>{
     // console.log(link.hre);
@@ -57,5 +56,8 @@ imagePopup.addEventListener('click', function() {
 popupImage.addEventListener('click', function(event) {
   event.stopPropagation();
 });   
+
+});
+
 
 
