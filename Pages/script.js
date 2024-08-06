@@ -1,16 +1,3 @@
-$(document).ready(function(){
-    jQuery.noConflict();
-    (function($) {
-        $('.carousel').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            dots: true,
-            arrows: true,
-            prevArrow: '<button type="button" class="slick-prev">&lt;</button>',
-            nextArrow: '<button type="button" class="slick-next">&gt;</button>'
-        });
-    })(jQuery);
-
     const activePage = window.location.pathname;
 // console.log(activePage)
 const navLinks = document.querySelectorAll('nav a').forEach(link =>{
