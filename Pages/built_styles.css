@@ -1896,7 +1896,7 @@ html {
   flex-direction: column;
   padding: var(--padding-card, 2rem);
   gap: 0.5rem;
-  background-color: #acd4beee;
+  background-color: #7d9e919b;
   /* background-color: #e7e0f7; */
   
 }
@@ -2294,9 +2294,9 @@ html {
 .navbar {
   display: flex;
   align-items: center;
+  padding: var(--navbar-padding, 0.5rem);
   min-height: 4rem;
   width: 100%;
-  padding-left: 4%;
 }
 
 :where(.navbar > *) {
@@ -3377,10 +3377,19 @@ html {
   background-color: hsl(var(--b1) / var(--tw-bg-opacity));
 }
 
+/* Apply zebra striping to the table rows */
 .table-zebra tbody tr:nth-child(even) th, .table-zebra tbody tr:nth-child(even) td {
   --tw-bg-opacity: 1;
-  background-color: hsl(var(--b2, var(--b1)) / var(--tw-bg-opacity));
+  /* background-color: hsl(var(--b2, var(--b1)) / var(--tw-bg-opacity)); */
+  background-color: #eef1ea;
 }
+/* Apply zebra striping to the table heading rows */
+.table-zebra thead tr:nth-child(odd) th,
+.table-zebra thead tr:nth-child(odd) td {
+  --tw-bg-opacity: 1;
+  background-color: #eef1ea;
+}
+
 
 .textarea:focus {
   outline: 2px solid hsla(var(--bc) / 0.2);

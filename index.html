@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="Nyasa Indial Institute of Technology Gandhinagar (IITGN)" content="The word Nyasa means 'trust' in Sanskrit. At Indian Institute of Technology Gandhinagar(iitgn),
+  <meta name="Nyasa Indian Institute of Technology Gandhinagar (IITGN)" content="The word Nyasa means 'trust' in Sanskrit. At Indian Institute of Technology Gandhinagar(iitgn),
   the word means stretching out our trustworthy hands to help little eyes that dream of a
   better life under their temporary thatched huts. NYASA, started in 2011, primarily aims
   to support and educate the children of migrant construction workers in and around the campus.
@@ -37,6 +37,18 @@
         height: 100px;
       }
     }
+
+    .custom-margin {
+      margin-top: 1rem; /* Default margin for small devices */
+      margin-bottom: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .custom-margin {
+        margin-top: 0; /* No margin for larger devices */
+        margin-bottom: 0;
+      }
+    }
   </style>
 
 
@@ -66,18 +78,23 @@
           <li>
             <a href="Pages/news.html" class="ghost-btn rounded-lg">News</a>
           </li>
-          <!-- <li>
-            <a href="/education.html" class="ghost-btn rounded-lg">Education</a>
-          </li> -->
+          
           <li>
             <a href="Pages/contribute.html" class="ghost-btn rounded-lg">Contribute</a>
           </li>
-          <!-- <li>
-            <a href="/blog.html" class="ghost-btn rounded-lg">Blog</a>
-          </li> -->
+         
           <li>
             <a href="Pages/team.html" class="ghost-btn rounded-lg">Team</a>
           </li>
+          <!-- <li class="dropdown">
+            <a tabindex="0" class="ghost-btn rounded-lg" id="dropdown-report" onclick="toggleDropdown(this)">Report</a>
+            <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52" aria-labelledby="dropdown-report">
+              <li><a href="Assets/Report/Report23_24.pdf" target="_blank">Report 2023-24</a></li>
+              <li><a href="Assets/Report/Report22_23.pdf" target="_blank">Report 2022-23</a></li>
+              <li><a href="Assets/Report/Report21_22.pdf" target="_blank">Report 2021-22</a></li>
+            </ul>
+          </li> -->
+          
         </nav>
       </div>
     </div>
@@ -105,12 +122,18 @@
             <li class="nav">
               <a href="Pages/contribute.html">Contribute</a>
             </li>
-            <!-- <li class="nav">
-              <a href="blog.html">Blog</a>
-            </li> -->
+          
             <li class="nav">
               <a href="Pages/team.html">Team</a>
             </li>
+            <!-- <li class="nav dropdown">
+              <a href="#" class="dropdown-toggle" style="width: 90%;" aria-expanded="false">Report</a>
+              <ul class="dropdown-content p-2 shadow menu bg-base-100 rounded-box w-52">
+                <li><a href="Pages/report1.html">Report 1</a></li>
+                <li><a href="Pages/report2.html">Report 2</a></li>
+                <li><a href="Pages/report3.html">Report 3</a></li>
+              </ul>
+            </li> -->
           </ul>
         </nav>
       </div>
@@ -166,27 +189,26 @@
     <!-- End of stats section -->
 
     <!-- start of horizontal divider -->
-    <div class="divider divider-horizontal"></div>
+<div class="divider divider-horizontal"></div>
 
-    <div class="card bg-base-100">
-      <div class="card-body">
-        <div class="flex flex-row gap-8 items-center">
-          <div>
-            <p>Sanjeevani Health Camp</p>
-            <h1 class="text-5xl font-semibold">2000+</h1>
-            <p>villagers and workers per year</p>
-          </div>
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-            </svg>
-          </div>
-        </div>
-
+<div class="card bg-base-100 custom-margin">
+  <div class="card-body">
+    <div class="flex flex-row gap-8 items-center">
+      <div>
+        <p>Sanjeevani Health Camp</p>
+        <h1 class="text-5xl font-semibold">2000+</h1>
+        <p>villagers and workers per year</p>
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+        </svg>
       </div>
     </div>
+  </div>
+</div>
 
     <div class="divider divider-horizontal"></div>
 
@@ -223,30 +245,49 @@
           aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
           aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
       </div>
       <div class="carousel-inner relative w-full overflow-hidden">
-        <div class="carousel-item active relative float-left w-full">
-          <img src="Assets/home/slide1.jpeg" loading="lazy" class="block w-full" alt="..." />
-          <div class="carousel-caption hidden md:block absolute text-center">
-            <h5 class="text-xl">Origami Session</h5>
-            <p>Nyasa Summer Camp 2023</p>
-          </div>
+      <div class="carousel-item active relative float-left w-full">
+        <img src="Assets/home/vegetable_printing.JPG" loading="lazy" class="block w-full" alt="Slide 1" />
+        <div class="carousel-caption hidden md:block absolute text-center">
+          <h5 class="text-xl">Vegetable Printing</h5>
+          <p>Nyasa Summer Camp 2024</p>
         </div>
+      </div>
+      <div class="carousel-item relative float-left w-full">
+        <img src="Assets/home/origami.JPG" loading="lazy" class="block w-full" alt="Slide 2" />
+        <div class="carousel-caption hidden md:block absolute text-center">
+          <h5 class="text-xl">Origami Session</h5>
+          <p>Nyasa Summer Camp 2024</p>
+        </div>
+      </div>
+      <div class="carousel-item relative float-left w-full">
+        <img src="Assets/home/Library.JPG" loading="lazy" class="block w-full" alt="Slide 3" />
+        <div class="carousel-caption hidden md:block absolute text-center">
+          <h5 class="text-xl">Library Visit</h5>
+          <p>Nyasa Summer Camp 2024</p>
+        </div>
+      </div>
         <div class="carousel-item relative float-left w-full">
-          <img src="Assets/home/slide2.jpeg" loading="lazy" class="block w-full" alt="..." />
+          <img src="Assets/home/sports.jpg" loading="lazy" class="block w-full" alt="Slide 4" />
+          <div class="carousel-caption hidden md:block absolute text-center">
+            <h5 class="text-xl">Sports Session</h5>
+            <p>Nyasa Summer Camp 2024</p>
+          </div>
+        </div>      
+        <div class="carousel-item relative float-left w-full">
+          <img src="Assets/home/Dance_session.JPG" loading="lazy" class="block w-full" alt="Slide 5" />
           <div class="carousel-caption hidden md:block absolute text-center">
             <h5 class="text-xl">Dance Session</h5>
-            <p>Nyasa Summer Camp 2022</p>
-          </div>
-        </div>
-        <div class="carousel-item relative float-left w-full">
-          <img src="Assets/home/slide3.jpeg" loading="lazy" class="block w-full" alt="..." />
-          <div class="carousel-caption hidden md:block absolute text-center">
-            <h5 class="text-xl">Music Session</h5>
-            <p>Nyasa Summer Camp 2022</p>
+            <p>Nyasa Summer Camp 2024</p>
           </div>
         </div>
       </div>
+      <!-- Previous and Next buttons -->
       <button
         class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
         type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -310,7 +351,7 @@
                 <h5 class="text-xl">
                   <span class="badge badge-primary badge-lg">NEW</span>
                   <br>
-                  Nyasa Summer Camp 2022
+                  Nyasa Summer Camp 2024
                 </h5>
                 <a href="Pages/Activities/summercamp.html" class="link link-hover">Click to know more</a>
               </div>
@@ -424,6 +465,10 @@
   </footer>
   <!-- js file -->
   <script src="Pages/script.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
 
 </body>
 
