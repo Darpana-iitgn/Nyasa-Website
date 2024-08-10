@@ -134,7 +134,16 @@
         .then(response => response.text())
         .then(html => {
           document.getElementById('nav-placeholder').innerHTML = html;
+          // Highlight the current page link
+        const currentPage = window.location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('.ghost-btn');
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('activePage');
+            }
         });
+        });
+        
     </script>
     
 
