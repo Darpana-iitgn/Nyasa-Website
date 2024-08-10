@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  },
+  "dependencies": {
+    "daisyui": "^2.13.6",
+    "tw-elements": "^1.0.0-alpha12"
+  }
+}
