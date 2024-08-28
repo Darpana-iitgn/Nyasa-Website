@@ -1,0 +1,372 @@
+
+        /*   === Footer Section Styling Starts ===   */
+        .footer {
+	
+          display: inline-block;
+          width: 100%;
+          vertical-align: top;
+          background-color: #021341;
+          background-image: url(../Assets/footer-widget-bg.png);
+          background-repeat: no-repeat;
+          background-size: 100% auto;
+          background-position: center 100px;
+      
+      
+      
+      
+      }
+      
+      
+      .footer .footer-contents {
+      width: 84%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+      margin-left: 8%;
+      margin-top: 10px;
+      }
+      
+      .footer-contents .footer-col {
+      flex-basis: calc(calc(100% / 4) - 20px);
+      }
+      
+      .footer-contents .footer-col .col-title {
+      min-height: 60px;
+      display: flex;
+      align-items: flex-end;
+      margin-bottom:20px;																																						
+      }
+      
+      .footer-col .col-title h4 {
+      font-size: 18PX;                                       
+      color: var(--light-heading-clr);
+      }
+      
+      .footer-col .col-contents {
+      display: flex;
+      flex-direction: column;
+      
+      }
+      .footer-col .col-contents ul {
+      color: #999999;
+      margin-left: 10px;
+      list-style-type: square;
+      
+      }
+      .footer-col .col-contents ul li a{
+      transition: transform .5s;
+      color: #999999;
+      font-size: 15px;
+      font-family: Open sans,Arial,sans serif;
+      
+      }
+      .footer-col .col-contents ul li a:hover{
+      transform: translateY(8px);
+      color: white;
+      font-size: 16px;
+      margin-left: 5px;
+      
+      
+      }
+      .footer-col .col-contents input {
+      width: 100%;
+      padding: 10px;
+      color: var(--dark-text-clr);
+      border: none;
+      border-radius: 5px;
+      }
+      
+      .footer-col .col-contents .newsletter-btn {
+      background-color: rgb(85, 85, 85);
+      color: #ffffff;
+      margin-top: 20px;
+      }
+      
+      .footer-col .col-contents .newsletter-btn:hover {
+      background-color: rgb(241, 241, 241);
+      color: #000000;
+      border: 1px solid var(--light-heading-clr);
+      }
+      
+      
+      
+      .footer-part-2{
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      
+      
+      
+      }
+      .footer-logo{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* background-color: #000 */
+      border-bottom: 1px solid #989898;
+      border-top: 1px solid #9f9f9f;
+      
+      
+      }
+      .footer-logo img{
+      width:160px;
+      height: 70px;
+      padding: 10px;
+      }
+      
+      .footer-part-2-col{
+      flex-basis: calc(calc(100% / 3) - 20px);
+      width: 100%;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      
+      }
+      
+      .footer-part-2-col-1{
+      width: 33%;
+      display: flex;
+      
+      }
+      .footer-part-2-col-contant{
+      display: block;
+      padding-left: 15px;
+      }
+      .footer-part-2-col-contant p{
+      font-size: 12px;
+      color: #cecece;
+      
+      }
+      
+      .footer-part-2-heading h3{
+      color: #cecece;
+      }
+      .footer-part-2-col-2{
+      width: 34%;
+      display: flex;
+      justify-content: center;
+  
+      
+      }
+      .footer-part-2-col-3{
+      width: 33%;
+      display: flex;
+      justify-content: center;
+      
+      }
+      
+      
+      .footer .copy-rights {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top: 1px solid var(--light-text-clr);
+      text-align: center;
+      background-color: #030c26c4;
+      
+      width: 100%;
+      justify-content: center;
+      }
+      
+      .footer .copy-rights p {
+      color: #ffffff;
+      padding: 1px;
+      font-size: 13px;
+      align-items: center;
+      }
+      
+      .footer .copy-rights p b {
+      color: #ff3131;
+      }
+      @media (max-width:1050px) {
+      .footer-part-2-col{
+          flex-basis: calc(calc(100% / 2) - 20px);
+          width: 100%;
+      
+      }
+      
+      }
+      @media (max-width:600px) {
+      .footer-part-2-col{
+          display: block;
+          flex-basis: calc(calc(100% / 1) - 20px);
+          width: 100%;
+          
+      
+      
+      }
+      .footer-part-2-col-1{
+          width: 100%;
+          margin-bottom: 30px;
+      
+      }
+      .footer-part-2-col-2{
+          width: 100%;
+          margin-bottom: 30px;
+          display: flex;
+          justify-content: left;
+      }
+      .footer-part-2-col-3{
+          width: 100%;
+          margin-bottom: 30px;
+          display: flex;
+          justify-content: left;
+      }
+      }
+      
+      /*   === Footer Section Styling Ends ===   */
+      
+      
+      
+      
+      
+      /*   === Media Query Starts ===   */
+      @media(max-width: 1024px) {
+      .footer-contents .footer-col {
+          flex-basis: calc(calc(100% / 2) - 20px);
+          
+          
+      }
+      }
+      
+      @media(max-width: 768px) {
+      
+      .testimonials .section-header {
+          width: 100%;
+          margin-bottom: 40px;
+      }
+      }
+      
+      @media(max-width: 668px) {
+      
+      /* Partners Section */
+      .partners h3 {
+          margin-right: 150px;
+      }
+      
+      /* Services Section */
+      .services-contents .service-box {
+          flex-basis: 100%;
+      }
+      
+      /* Courses Section */
+      .courses .course-contents .course-card {
+          flex-basis: 100%;
+      }
+      }
+      
+      @media(max-width: 568px) {
+      .footer-contents .footer-col {
+          flex-basis: 100%;
+      }
+      }
+      
+      
+      /*   === Media Query Ends ===   */
+      
+      
+      
+      .social-ul{
+      display: flex;
+      margin-top: 10px;
+      } 
+      .social-ul li{
+      position: relative;
+      display: block;
+      color: hsl(0, 54%, 95%);
+      font-size: 25px;
+      height: 35px;
+      width: 35px;
+      /* background: #4e4f4f; */
+      line-height: 30px;
+      border-radius: 50%;
+      margin-right: 10px;
+      cursor: pointer;
+      transition: .5s;
+      }
+      
+      .social-ul li i{
+      margin-left: 5px;
+      margin-top: 5px;
+       
+      
+      }
+      .social-ul li:before{
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      height: inherit;
+      width: inherit;
+      /* background: #d35400; */
+      border-radius: 5px;
+      transform: scale(.9);
+      z-index: -1;
+      transition: .5s;
+      }
+      
+      .social-ul li:nth-child(1):before{
+      background: #1DA1F2;
+      }
+      .social-ul li:nth-child(2):before{
+      background: #2867B2;
+      }
+      .social-ul li:nth-child(3):before{
+      background: #E1306C;
+      }
+      .social-ul li:nth-child(4):before{
+      background: #2867B2;
+      }
+      .social-ul li:nth-child(5):before{
+      background: #ff0000;
+      }
+      .social-ul li:hover:before{
+      filter: blur(3px);
+      transform: scale(1.2);
+      /* box-shadow: 0 0 15px #d35400; */
+      }
+      
+      .social-ul li:nth-child(1):hover:before{
+      box-shadow: 0 0 15px #1DA1F2;
+      }
+      .social-ul li:nth-child(2):hover:before{
+      box-shadow: 0 0 15px #2867B2;
+      }
+      .social-ul li:nth-child(3):hover:before{
+      box-shadow: 0 0 15px #E1306C;
+      }
+      
+      .social-ul li:nth-child(4):hover:before{
+      box-shadow: 0 0 15px #2867B2;
+      }
+      .social-ul li:nth-child(5):hover:before{
+      box-shadow: 0 0 15px #ff0000;
+      }
+      
+      .social-ul li:nth-child(1):hover{
+      color: #26a4f2;
+      box-shadow: 0 0 15px #1DA1F2;
+      text-shadow: 0 0 15px #1DA1F2;
+      }
+      .social-ul li:nth-child(2):hover{
+      color: #2a6cbb;
+      box-shadow: 0 0 15px #2867B2;
+      text-shadow: 0 0 15px #2867B2;
+      }
+      .social-ul li:nth-child(3):hover{
+      color: #e23670;
+      box-shadow: 0 0 15px #E1306C;
+      text-shadow: 0 0 15px #E1306C;
+      }
+      .social-ul li:nth-child(4):hover{
+      color: #2a6cbb;
+      box-shadow: 0 0 15px #2867B2;
+      text-shadow: 0 0 15px #2867B2;
+      }
+      
+      .social-ul li:nth-child(5):hover{
+      color: #ff1a1a;
+      box-shadow: 0 0 15px #ff0000;
+      text-shadow: 0 0 15px #ff0000;
+      } 
